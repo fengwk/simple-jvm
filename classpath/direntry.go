@@ -31,7 +31,7 @@ func NewDirEntry(path string) (*DirEntry, error) {
 }
 
 func (de *DirEntry) Read(classpath string) ([]byte, error) {
-	subPath := strings.ReplaceAll(classpath, string(NameSeparator), string(os.PathListSeparator))
+	subPath := strings.ReplaceAll(classpath, string(NameSeparator), string(os.PathSeparator))
 	fullPath := filepath.Join(de.AbsDirPath, subPath)
 	return ioutil.ReadFile(fullPath)
 }

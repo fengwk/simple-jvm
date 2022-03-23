@@ -7,6 +7,7 @@ SimpleJVM是出于学习目的的简单JVM实现，因此在功能实现上将�
 - cmd
 - classpath
 - classloader
+- classfile
 
 # cmd
 
@@ -36,3 +37,13 @@ classpath模块用于将资源从某个位置加载到程序内存中，其加�
 # classloader
 
 类加载器将负责加载某一位置的字节码流，并将其转换为JVM运行时的类对象。
+
+# classfile
+
+解析字节码文件为运行时结构。
+
+# 参考
+
+- 自己动手写Java虚拟机
+- Java虚拟机规范（Java SE 8）
+- 深入理解Java虚拟机
